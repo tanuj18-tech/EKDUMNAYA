@@ -27,4 +27,4 @@ module.exports = async (email, title, body) => {
   }
 };
 
-module.exports = mailSender;
+ 
