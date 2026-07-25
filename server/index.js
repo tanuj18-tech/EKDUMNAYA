@@ -30,13 +30,14 @@ app.use(cookieParse());
 
 //frontend se jo call lagega usko entertain krna
 app.use(
-    cors({
-        // origin:"http://localhost:3000",
-       origin: process.env.FRONTEND_URL,
-        credentials: true
-    })
-)
-
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://studynotionfinal-zeta.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 //cloudinary ko upload krne ka syntax
 app.use(
     fileUpload({
