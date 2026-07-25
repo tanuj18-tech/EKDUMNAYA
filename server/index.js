@@ -32,8 +32,9 @@ app.use(cookieParse());
 app.use(
   cors({
     origin: [
+         "https://ekdumnaya.vercel.app/",
       "http://localhost:3000",
-      "https://studynotionfinal-zeta.vercel.app",
+      
     ],
     credentials: true,
   })
