@@ -61,7 +61,7 @@ console.log("OTP generated: ", otp);
 //signup
 
 exports.signup = async (req,res)=> {
-
+console.log("SIGNUP API HIT");
         try{
 const { accountType,
     firstName,
