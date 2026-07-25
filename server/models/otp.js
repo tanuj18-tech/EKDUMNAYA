@@ -44,7 +44,7 @@ async function sendVerificationEmail(email,otp) {
 
   otpSchema.pre("save", async function () {
     try {
-        // await sendVerificationEmail(this.email, this.otp);
+         await sendVerificationEmail(this.email, this.otp);
     } catch (error) {
         console.log("Email failed but OTP will still save");
     }
