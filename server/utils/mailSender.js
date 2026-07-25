@@ -10,6 +10,9 @@ const mailSender = async (email,title, body) => {
         },
         });
 
+        await transporter.verify();
+console.log("SMTP Connected");
+
         let info = await transporter.sendMail({
             from: `"StudyNotion" <${process.env.MAIL_USER}>`,
             to:`${email}`,
